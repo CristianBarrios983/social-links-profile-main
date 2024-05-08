@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+
 :root{
     --Green: hsl(75, 94%, 57%);
     --White: hsl(0, 0%, 100%);
@@ -14,6 +19,7 @@
 
 body{
     font-size: 14px;
+    font-family: 'Inter', sans-serif;
     background-color: var(--Off-Black);
 }
 .container{
@@ -28,6 +34,7 @@ body{
     width: 330px;
     border-radius: 15px;
     padding: 20px;
+    margin: 3rem 0;
 }
 
 .card-profile{
@@ -46,6 +53,7 @@ body{
 }
 
 .username{
+    font-size: 26px;
     margin-bottom: 10px;
     font-weight: 700;
 }
@@ -67,6 +75,7 @@ body{
     width: 100%;
     text-decoration: none;
     display: inline-block;
+    font-weight: 700;
     background-color: var(--Grey);
     color: var(--White);
     padding: 12px;
