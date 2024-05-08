@@ -1,0 +1,93 @@
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    background-color: var(--Off-Black);
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: var(--Dark-Grey);
+    width: 330px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.card-profile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--White);
+}
+
+.card-imagen > img{
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.username{
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.ubication{
+    color: var(--Green);
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.links{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link > a{
+    width: 100%;
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--Grey);
+    color: var(--White);
+    padding: 12px;
+    border-radius: 7px;
+    text-align: center;
+    transition: background-color 1s, color 1s;
+}
+
+.link > a:hover{
+    background-color: var(--Green);
+    color: var(--Off-Black);
+    cursor: pointer;
+}
+
+@media (min-width:700px){
+    .card{
+        width: 370px;
+        padding: 40px;
+    }
+
+    .link > a{
+        padding: 15px;
+    }
+}
